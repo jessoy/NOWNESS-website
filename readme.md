@@ -9,3 +9,6 @@ See [link](https://www.nowness.com/) for original full website being replicated
 - upgrade icons and symbols to thin line
 - nested list reveal to be configured ('sites' in nav-bar)
 - checkbox to be hidden
+- continue page configuration + end sections
+- check responsive sizing of elements
+- insert images and media
