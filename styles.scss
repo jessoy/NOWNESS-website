@@ -18,6 +18,7 @@ html {
 :root {
   --grey-color-line: rgb(211, 211, 211);
   --grey-color-background: #f8f8f8;
+  --highlight-colour: #c9a16e;
 }
 
 /* connect banner */
@@ -48,19 +49,30 @@ html {
   margin-bottom: 0.5rem;
   margin-left: 1rem;
 
-  .nav-menu,
-  .logo {
-    display: absolute;
-    top: 10px;
+  // .burger-shower,
+  // .logo {
+  //   // display: absolute;
+  //   // top: 10px;
+  // }
+  .nav-menu {
+    order: -1;
+
+    .burger-icon {
+      margin: 0.5rem;
+
+      .burgerBar {
+        width: 1.4rem;
+        height: 0.15rem;
+        margin: 0.35rem;
+        background-color: black;
+      }
+    }
   }
 }
 
-.burgerBar {
-  width: 1.4rem;
-  height: 0.15rem;
-  margin: 0.35rem;
-  background-color: black;
-}
+// .burger-shower{
+//   // display: none;
+// }
 
 h1 {
   font-weight: 400;
@@ -181,14 +193,59 @@ nav {
   display: none;
 }
 
-.nav-menu .burger-icon:hover,
-.nav-menu .burger-icon:focus-within {
-  // background-color: red;
+.burger-shower:checked ~ .nav-menu > nav > ul {
+  display: inherit;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+}
 
-  ~ ul {
-    // background-color: royalblue;
+// .nav-menu a {
+//   display: relative;
+// }
+
+.nav-menu ul li a:hover {
+  background-color: lawngreen;
+  display: inherit;
+  // position: absolute;
+
+  ul {
     display: inherit;
-    top: 50px;
-    left: 0px;
+    position: absolute;
+    top: 1000px;
+  }
+}
+
+// .nav-menu ul ul {
+//   position: absolute;
+//   top: 500px;
+// }
+
+// .nav-menu .burger-icon:hover,
+// .nav-menu .burger-icon:focus-within {
+//   // background-color: red;
+
+//   ~ ul {
+//     // background-color: royalblue;
+//     display: inherit;
+//     top: 50px;
+//     left: 0px;
+//   }
+
+/* Animation */
+
+.burger-shower:checked ~ .nav-menu .burger-icon {
+  .one {
+    background-color: var(--highlight-colour);
+    transform: translate(0, 0.4rem) rotate(-45deg);
+  }
+  .two {
+    display: none;
+  }
+
+  .three {
+    background-color: var(--highlight-colour);
+    transform: translate(0, -0.08rem) rotate(45deg);
   }
 }

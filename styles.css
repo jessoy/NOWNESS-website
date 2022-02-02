@@ -20,6 +20,7 @@ html {
 :root {
   --grey-color-line: rgb(211, 211, 211);
   --grey-color-background: #f8f8f8;
+  --highlight-colour: #c9a16e;
 }
 
 /* connect banner */
@@ -53,13 +54,17 @@ html {
   margin-left: 1rem;
 }
 
-.left-nav .nav-menu,
-.left-nav .logo {
-  display: absolute;
-  top: 10px;
+.left-nav .nav-menu {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
-.burgerBar {
+.left-nav .nav-menu .burger-icon {
+  margin: 0.5rem;
+}
+
+.left-nav .nav-menu .burger-icon .burgerBar {
   width: 1.4rem;
   height: 0.15rem;
   margin: 0.35rem;
@@ -191,10 +196,39 @@ nav ul .social-media-container {
   display: none;
 }
 
-.nav-menu .burger-icon:hover ~ ul,
-.nav-menu .burger-icon:focus-within ~ ul {
+.burger-shower:checked ~ .nav-menu > nav > ul {
   display: inherit;
-  top: 50px;
-  left: 0px;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+}
+
+.nav-menu ul li a:hover {
+  background-color: lawngreen;
+  display: inherit;
+}
+
+.nav-menu ul li a:hover ul {
+  display: inherit;
+  position: absolute;
+  top: 1000px;
+}
+
+/* Animation */
+.burger-shower:checked ~ .nav-menu .burger-icon .one {
+  background-color: var(--highlight-colour);
+  -webkit-transform: translate(0, 0.4rem) rotate(-45deg);
+          transform: translate(0, 0.4rem) rotate(-45deg);
+}
+
+.burger-shower:checked ~ .nav-menu .burger-icon .two {
+  display: none;
+}
+
+.burger-shower:checked ~ .nav-menu .burger-icon .three {
+  background-color: var(--highlight-colour);
+  -webkit-transform: translate(0, -0.08rem) rotate(45deg);
+          transform: translate(0, -0.08rem) rotate(45deg);
 }
 /*# sourceMappingURL=styles.css.map */
