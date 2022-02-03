@@ -395,9 +395,13 @@ main img {
 
 main .feature .video-container {
   width: 100%;
-  height: 12.5rem;
+  min-height: 12.5rem;
   background-color: rebeccapurple;
   cursor: pointer;
+  background-image: url("https://img.nowness.com/nowness-frontend/ifUO20DRbSUWUMTWEYZf_G6Zfl5Lc.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: cover;
 }
 
 main .upcoming {
@@ -425,7 +429,7 @@ main .upcoming .image-sliding-container .sliding-image .video-container {
 main .current .current-section {
   text-align: left;
   width: 94%;
-  height: 40%;
+  max-height: 40%;
   margin: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -434,7 +438,6 @@ main .current .current-section {
 main .current .current-section .video-container {
   background-color: rebeccapurple;
   cursor: pointer;
-  height: 22.5rem;
 }
 
 main .most-watched .most-watched-section {
@@ -445,7 +448,6 @@ main .most-watched .most-watched-section {
 
 main .most-watched .most-watched-section .video-container {
   width: 100%;
-  height: 16rem;
   background-color: rebeccapurple;
   cursor: pointer;
 }

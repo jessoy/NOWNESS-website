@@ -359,8 +359,12 @@ main {
   .feature {
     .video-container {
       width: 100%;
-      height: 12.5rem;
+      min-height: 12.5rem;
       @include video-container();
+      background-image: url('https://img.nowness.com/nowness-frontend/ifUO20DRbSUWUMTWEYZf_G6Zfl5Lc.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: cover;
     }
   }
 
@@ -387,14 +391,15 @@ main {
     .current-section {
       text-align: left;
       width: 94%;
-      height: 40%;
+      max-height: 40%;
+      // configure
       margin: 1rem;
       margin-left: auto;
       margin-right: auto;
 
       .video-container {
         @include video-container();
-        height: 22.5rem;
+        // height: 22.5rem;
       }
     }
   }
@@ -407,7 +412,7 @@ main {
 
       .video-container {
         width: 100%;
-        height: 16rem;
+        // height: 16rem;
         @include video-container();
       }
     }

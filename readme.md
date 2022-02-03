@@ -16,7 +16,7 @@ DROP DOWN MENU
 - nested list reveal to be configured ('sites' in nav-bar)
 - ~~checkbox to be hidden~~
 - reveal drop down menu on animation
-- highlight functionality on nav-items
+- ~~highlight functionality on nav-items~~
 - ~~change cursor type on hover(burger)~~
 
 MAIN BODY
@@ -27,6 +27,7 @@ MAIN BODY
 - rolling slider of images
 - Button border too thick
 - social media rolling reveal colour on hover
+- social media - resolve wrap
 
 DESKTOP MEDIA QUERY
 
