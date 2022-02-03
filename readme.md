@@ -26,6 +26,7 @@ MAIN BODY
 - insert images and media
 - rolling slider of images
 - Button border too thick
+- social media rolling reveal colour on hover
 
 DESKTOP MEDIA QUERY
 
@@ -39,4 +40,4 @@ MIXINS
 
 FOOTER
 
-- re-work positioning
+- ~~re-work positioning~~

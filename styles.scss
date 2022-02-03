@@ -67,7 +67,7 @@ html {
     transform: scale(1.3);
   }
 
-  a:hover i{
+  a:hover i {
     color: var(--highlight-colour);
   }
 }
@@ -86,7 +86,8 @@ header {
   width: 100%;
 }
 
-main {
+main,
+footer {
   position: relative;
   top: 7rem;
 }
@@ -515,7 +516,7 @@ footer {
     @include text-formatting();
     font-size: 0.88rem;
     margin-bottom: 5rem;
-    
+
     p {
       margin: 2rem 0;
       color: black;
