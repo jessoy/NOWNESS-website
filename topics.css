@@ -1,0 +1,59 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --grey-color-line: rgb(211, 211, 211);
+  --grey-color-background: #f8f8f8;
+  --grey-color-text: #7f7f7f;
+  --highlight-colour: #c9a16e;
+}
+
+h1 {
+  color: black;
+}
+
+.grid-container {
+  width: 90%;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -ms-grid-rows: (minmax(12rem, 15rem))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(12rem, 15rem));
+  -ms-grid-columns: (minmax(12rem, 15rem))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(12rem, 15rem));
+  grid-auto-columns: minmax(12rem, 15rem);
+  grid-auto-columns: minmax(12rem, 15rem);
+  grid-gap: 1.3rem;
+}
+
+.grid-item img {
+  position: relative;
+}
+
+.grid-item h3 {
+  color: white;
+  text-shadow: black;
+  position: relative;
+  top: -50%;
+  font-weight: 500;
+}
+/*# sourceMappingURL=topics.css.map */

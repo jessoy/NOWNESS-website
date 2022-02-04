@@ -59,10 +59,15 @@ footer {
 }
 
 h1 {
+  color: #000;
   font-weight: 400;
   font-size: 1.4rem;
   margin-left: 0.2rem;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 .pointer {
@@ -188,15 +193,12 @@ nav {
   text-transform: uppercase;
 }
 
-nav .drop-down-container {
-  overflow: auto;
-}
-
 nav ul {
   list-style: none;
-  display: absolute;
   background-color: var(--grey-color-background);
   line-height: 0.6rem;
+  height: calc(100vh - 7rem);
+  overflow: auto;
 }
 
 nav ul li {

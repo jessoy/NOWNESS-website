@@ -18,7 +18,7 @@ DROP DOWN MENU
 - reveal drop down menu on animation / transistion
 - ~~highlight functionality on nav-items~~
 - ~~change cursor type on hover(burger)~~
-- add second scroll bar to nav list
+- ~~add second scroll bar to nav list~~
 
 MAIN BODY
 
@@ -48,5 +48,5 @@ FOOTER
 
 SECOND PAGE
 
-- topics page HTML
+- ~~topics page HTML~~
 - topics page SCSS
