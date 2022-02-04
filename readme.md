@@ -27,7 +27,7 @@ MAIN BODY
 - ~~insert images and media~~
 - ~~rolling slider of images~~
 - ~~Button border too thick~~
-- social media rolling reveal colour on hover - sprite
+- ~~social media rolling reveal colour on hover - sprite~~
 - social media - resolve wrap
 - ~~video info on hover~~
 

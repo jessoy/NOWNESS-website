@@ -360,6 +360,7 @@ main > div {
 
 main {
   text-align: center;
+  /* Sprite section */
 }
 
 main p {
@@ -725,6 +726,27 @@ main .social-media a {
 
 main .social-media a:hover i {
   color: var(--highlight-colour);
+}
+
+main .social-media-section .fb {
+  margin: 1.25rem 2.25rem;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+}
+
+main .social-media-section .fb img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  position: relative;
+  top: -0.1rem;
+  left: -1.5rem;
+  left: 1.7rem;
+}
+
+main .social-media-section .fb a:hover img {
+  left: -1.5rem;
 }
 
 main .more-section {
