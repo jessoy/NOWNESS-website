@@ -13,7 +13,7 @@ HEADER BAR
 
 DROP DOWN MENU
 
-- nested list reveal to be configured ('sites' in nav-bar)
+- ~~nested list reveal to be configured ('sites' in nav-bar)~~
 - ~~checkbox to be hidden~~
 - reveal drop down menu on animation / transistion
 - ~~highlight functionality on nav-items~~
@@ -45,3 +45,8 @@ FOOTER
 
 - ~~re-work positioning~~
 - ~~:hover text + cursor pointer~~
+
+SECOND PAGE
+
+- topics page HTML
+- topics page SCSS

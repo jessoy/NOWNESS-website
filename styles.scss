@@ -22,14 +22,6 @@ html {
   --highlight-colour: #c9a16e;
 }
 
-/* connect banner */
-
-// .connect-banner {
-//     background-color: black;
-//     color: white;
-//     display: none;
-// }
-
 /* GENERAL*/
 
 @mixin flex-row-center {
@@ -222,9 +214,13 @@ h1 {
 nav {
   text-transform: uppercase;
 
+  .drop-down-container {
+    overflow: auto;
+  }
+
   ul {
     list-style: none;
-    // display: absolute;
+    display: absolute;
     background-color: var(--grey-color-background);
     line-height: 0.6rem;
 
@@ -234,6 +230,12 @@ nav {
       font-weight: 500;
       font-size: 0.8rem;
       position: relative;
+
+      a {
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+      }
 
       .hover-line {
         margin: 0;
@@ -265,7 +267,7 @@ nav {
   display: none;
 }
 
-.burger-shower:checked ~ .nav-menu > nav > ul {
+.burger-shower:checked ~ .nav-menu .drop-down-container > ul {
   display: inherit;
   position: absolute;
   top: 7rem;
@@ -282,12 +284,16 @@ nav {
   left: 1.25rem;
 }
 
-.nav-menu li:hover {
+.drop-down-container > ul > li:hover {
   background-color: white;
 
   .hover-line {
     display: inherit;
   }
+}
+
+.nav-menu ul ul {
+  display: none;
 }
 
 .nav-menu .social-media-container:hover {
@@ -301,16 +307,20 @@ nav {
 
 /* SECONDARY DROP DOWN */
 
-.nav-menu ul li a:hover {
-  // background-color: lawngreen;
+.nav-menu ul li a:focus-within ~ ul {
   display: inherit;
-  // position: absolute;
+  position: absolute;
+  top: 2.65rem;
+  left: 0;
+  width: 100%;
 
-  ul {
-    display: inherit;
-    position: absolute;
-    top: 1000px;
+  .hover-line {
+    display: none;
   }
+}
+
+.nav-menu ul ul li:hover {
+  background-color: white;
 }
 
 /* Animation */

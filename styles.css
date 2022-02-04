@@ -24,7 +24,6 @@ html {
   --highlight-colour: #c9a16e;
 }
 
-/* connect banner */
 /* GENERAL*/
 /* MAIN */
 header {
@@ -189,8 +188,13 @@ nav {
   text-transform: uppercase;
 }
 
+nav .drop-down-container {
+  overflow: auto;
+}
+
 nav ul {
   list-style: none;
+  display: absolute;
   background-color: var(--grey-color-background);
   line-height: 0.6rem;
 }
@@ -201,6 +205,12 @@ nav ul li {
   font-weight: 500;
   font-size: 0.8rem;
   position: relative;
+}
+
+nav ul li a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
 }
 
 nav ul li .hover-line {
@@ -271,7 +281,7 @@ nav ul .social-media-container {
   display: none;
 }
 
-.burger-shower:checked ~ .nav-menu > nav > ul {
+.burger-shower:checked ~ .nav-menu .drop-down-container > ul {
   display: inherit;
   position: absolute;
   top: 7rem;
@@ -288,12 +298,16 @@ nav ul .social-media-container {
   left: 1.25rem;
 }
 
-.nav-menu li:hover {
+.drop-down-container > ul > li:hover {
   background-color: white;
 }
 
-.nav-menu li:hover .hover-line {
+.drop-down-container > ul > li:hover .hover-line {
   display: inherit;
+}
+
+.nav-menu ul ul {
+  display: none;
 }
 
 .nav-menu .social-media-container:hover {
@@ -306,14 +320,20 @@ nav ul .social-media-container {
 }
 
 /* SECONDARY DROP DOWN */
-.nav-menu ul li a:hover {
-  display: inherit;
-}
-
-.nav-menu ul li a:hover ul {
+.nav-menu ul li a:focus-within ~ ul {
   display: inherit;
   position: absolute;
-  top: 1000px;
+  top: 2.65rem;
+  left: 0;
+  width: 100%;
+}
+
+.nav-menu ul li a:focus-within ~ ul .hover-line {
+  display: none;
+}
+
+.nav-menu ul ul li:hover {
+  background-color: white;
 }
 
 /* Animation */
