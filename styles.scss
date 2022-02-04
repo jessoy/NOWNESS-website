@@ -46,12 +46,43 @@ html {
 }
 
 @mixin video-container {
-  background-color: rebeccapurple;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
   cursor: pointer;
 }
 
+@mixin video-play-button {
+  background-color: rgba(255, 255, 255, 0.664);
+  height: 6rem;
+  width: 3rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+  transform: translateY(100%);
+  transition: transform 0.5s;
+
+  i {
+    transform: scale(0.7);
+  }
+
+  .more:hover,
+  .play:hover {
+    color: var(--highlight-colour);
+    filter: brightness(150%);
+  }
+}
+
 @mixin image-container {
-  background-color: rebeccapurple;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -79,6 +110,8 @@ html {
   padding: 0.4rem;
 }
 
+/* MAIN */
+
 header {
   position: fixed;
   z-index: 9;
@@ -92,7 +125,7 @@ footer {
   top: 7rem;
 }
 
-/* HEADER*/
+/* HEADER */
 
 .nav-bar {
   @include flex-row-center();
@@ -136,7 +169,6 @@ h1 {
 .nav-searchbar {
   @include flex-row-center();
   margin-right: 3rem;
-  // justify-content: flex-end;
 
   div:hover {
     color: var(--highlight-colour);
@@ -147,7 +179,6 @@ h1 {
 .search,
 .play,
 .account {
-  // background-color: blue;
   height: 1.8rem;
   width: 1.4rem;
   margin: 0.8rem 0.4rem 0.4rem;
@@ -354,6 +385,8 @@ main {
 
   img {
     max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
   }
 
   .feature {
@@ -361,7 +394,7 @@ main {
       width: 100%;
       min-height: 12.5rem;
       @include video-container();
-      background-image: url('https://img.nowness.com/nowness-frontend/ifUO20DRbSUWUMTWEYZf_G6Zfl5Lc.jpg');
+      background-image: url("https://img.nowness.com/nowness-frontend/ifUO20DRbSUWUMTWEYZf_G6Zfl5Lc.jpg");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: cover;
@@ -374,6 +407,7 @@ main {
     .image-sliding-container {
       display: flex;
       width: 100%;
+      overflow: auto;
 
       .sliding-image {
         margin: 1rem;
@@ -382,6 +416,14 @@ main {
           width: 15rem;
           height: 9.5rem;
           @include video-container();
+
+          .video-play-button {
+            @include video-play-button();
+          }
+        }
+
+        .video-container:hover .video-play-button {
+          transform: translateY(0);
         }
       }
     }
@@ -392,14 +434,20 @@ main {
       text-align: left;
       width: 94%;
       max-height: 40%;
-      // configure
       margin: 1rem;
       margin-left: auto;
       margin-right: auto;
 
       .video-container {
         @include video-container();
-        // height: 22.5rem;
+
+        .video-play-button {
+          @include video-play-button();
+        }
+      }
+
+      .video-container:hover .video-play-button {
+        transform: translateY(0);
       }
     }
   }
@@ -411,9 +459,15 @@ main {
       max-width: 25rem;
 
       .video-container {
-        width: 100%;
-        // height: 16rem;
         @include video-container();
+
+        .video-play-button {
+          @include video-play-button();
+        }
+      }
+
+      .video-container:hover .video-play-button {
+        transform: translateY(0);
       }
     }
   }
@@ -441,6 +495,8 @@ main {
     padding: 0.7rem 3rem;
     color: #000;
     background-color: white;
+    border-style: solid;
+    border-width: thin;
   }
 
   button:hover {
@@ -494,7 +550,6 @@ main {
     }
 
     h5 {
-      // background-color: #c9a16e;
       cursor: pointer;
       margin-top: 0.01rem;
     }
@@ -514,6 +569,11 @@ footer {
       @include text-formatting();
       font-size: 0.75rem;
       margin: 3rem 0;
+      cursor: pointer;
+    }
+
+    p:hover {
+      color: var(--highlight-colour);
     }
   }
 

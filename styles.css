@@ -26,6 +26,7 @@ html {
 
 /* connect banner */
 /* GENERAL*/
+/* MAIN */
 header {
   position: fixed;
   z-index: 9;
@@ -39,7 +40,7 @@ footer {
   top: 7rem;
 }
 
-/* HEADER*/
+/* HEADER */
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,12 +392,18 @@ main a {
 
 main img {
   max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
 
 main .feature .video-container {
   width: 100%;
   min-height: 12.5rem;
-  background-color: rebeccapurple;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
   cursor: pointer;
   background-image: url("https://img.nowness.com/nowness-frontend/ifUO20DRbSUWUMTWEYZf_G6Zfl5Lc.jpg");
   background-size: 100%;
@@ -413,6 +420,7 @@ main .upcoming .image-sliding-container {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  overflow: auto;
 }
 
 main .upcoming .image-sliding-container .sliding-image {
@@ -422,8 +430,58 @@ main .upcoming .image-sliding-container .sliding-image {
 main .upcoming .image-sliding-container .sliding-image .video-container {
   width: 15rem;
   height: 9.5rem;
-  background-color: rebeccapurple;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
   cursor: pointer;
+}
+
+main .upcoming .image-sliding-container .sliding-image .video-container .video-play-button {
+  background-color: rgba(255, 255, 255, 0.664);
+  height: 6rem;
+  width: 3rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+main .upcoming .image-sliding-container .sliding-image .video-container .video-play-button i {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+main .upcoming .image-sliding-container .sliding-image .video-container .video-play-button .more:hover,
+main .upcoming .image-sliding-container .sliding-image .video-container .video-play-button .play:hover {
+  color: var(--highlight-colour);
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+main .upcoming .image-sliding-container .sliding-image .video-container:hover .video-play-button {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 main .current .current-section {
@@ -436,8 +494,58 @@ main .current .current-section {
 }
 
 main .current .current-section .video-container {
-  background-color: rebeccapurple;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
   cursor: pointer;
+}
+
+main .current .current-section .video-container .video-play-button {
+  background-color: rgba(255, 255, 255, 0.664);
+  height: 6rem;
+  width: 3rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+main .current .current-section .video-container .video-play-button i {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+main .current .current-section .video-container .video-play-button .more:hover,
+main .current .current-section .video-container .video-play-button .play:hover {
+  color: var(--highlight-colour);
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+main .current .current-section .video-container:hover .video-play-button {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 main .most-watched .most-watched-section {
@@ -447,9 +555,58 @@ main .most-watched .most-watched-section {
 }
 
 main .most-watched .most-watched-section .video-container {
-  width: 100%;
-  background-color: rebeccapurple;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
   cursor: pointer;
+}
+
+main .most-watched .most-watched-section .video-container .video-play-button {
+  background-color: rgba(255, 255, 255, 0.664);
+  height: 6rem;
+  width: 3rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+main .most-watched .most-watched-section .video-container .video-play-button i {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+main .most-watched .most-watched-section .video-container .video-play-button .more:hover,
+main .most-watched .most-watched-section .video-container .video-play-button .play:hover {
+  color: var(--highlight-colour);
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+main .most-watched .most-watched-section .video-container:hover .video-play-button {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 main .share .share-section {
@@ -461,7 +618,7 @@ main .share .share-section {
 main .share .share-section .image-container {
   width: 16.5rem;
   height: 16.5rem;
-  background-color: rebeccapurple;
+  background-color: white;
   cursor: pointer;
   margin-bottom: 0.75rem;
   margin-left: auto;
@@ -477,6 +634,8 @@ main button {
   padding: 0.7rem 3rem;
   color: #000;
   background-color: white;
+  border-style: solid;
+  border-width: thin;
 }
 
 main button:hover {
@@ -553,7 +712,7 @@ main .more-section {
 }
 
 main .more-section .image-container {
-  background-color: rebeccapurple;
+  background-color: white;
   cursor: pointer;
   width: 13.5rem;
   height: 13.5rem;
@@ -593,6 +752,11 @@ footer .footer-list p {
   font-weight: 300;
   font-size: 0.75rem;
   margin: 3rem 0;
+  cursor: pointer;
+}
+
+footer .footer-list p:hover {
+  color: var(--highlight-colour);
 }
 
 footer .footer-banner {

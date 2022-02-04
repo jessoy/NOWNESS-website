@@ -15,19 +15,21 @@ DROP DOWN MENU
 
 - nested list reveal to be configured ('sites' in nav-bar)
 - ~~checkbox to be hidden~~
-- reveal drop down menu on animation
+- reveal drop down menu on animation / transistion
 - ~~highlight functionality on nav-items~~
 - ~~change cursor type on hover(burger)~~
+- add second scroll bar to nav list
 
 MAIN BODY
 
 - ~~continue page configuration + end sections~~
 - check responsive sizing of elements
-- insert images and media
-- rolling slider of images
-- Button border too thick
-- social media rolling reveal colour on hover
+- ~~insert images and media~~
+- ~~rolling slider of images~~
+- ~~Button border too thick~~
+- social media rolling reveal colour on hover - sprite
 - social media - resolve wrap
+- ~~video info on hover~~
 
 DESKTOP MEDIA QUERY
 
@@ -42,3 +44,4 @@ MIXINS
 FOOTER
 
 - ~~re-work positioning~~
+- ~~:hover text + cursor pointer~~
