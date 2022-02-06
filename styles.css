@@ -154,7 +154,6 @@ a {
 .nav-sections {
   text-transform: uppercase;
   color: #424242;
-  font-family: "Jost", sans-serif;
   font-weight: 300;
   font-size: 0.8rem;
   min-width: 100%;
@@ -381,7 +380,6 @@ main h2 {
 main h3 {
   text-transform: uppercase;
   color: #424242;
-  font-family: "Jost", sans-serif;
   font-weight: 300;
   margin: 1.25rem;
 }
@@ -651,7 +649,6 @@ main .share .share-section .image-container {
 main button {
   text-transform: uppercase;
   color: #424242;
-  font-family: "Jost", sans-serif;
   font-weight: 300;
   cursor: pointer;
   padding: 0.7rem 3rem;
@@ -792,7 +789,6 @@ footer .footer-list {
 footer .footer-list p {
   text-transform: uppercase;
   color: #424242;
-  font-family: "Jost", sans-serif;
   font-weight: 300;
   font-size: 0.75rem;
   margin: 3rem 0;
@@ -806,7 +802,6 @@ footer .footer-list p:hover {
 footer .footer-banner {
   text-transform: uppercase;
   color: #424242;
-  font-family: "Jost", sans-serif;
   font-weight: 300;
   font-size: 0.88rem;
   margin-bottom: 5rem;

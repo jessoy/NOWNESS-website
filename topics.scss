@@ -22,35 +22,154 @@ html {
   --highlight-colour: #c9a16e;
 }
 
-h1 {
-  color: black;
+main {
+  h1 {
+    color: black;
+    text-transform: uppercase;
+    color: rgb(66, 66, 66);
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  .top-text {
+    border-bottom: none;
+  }
+
+  .search-sort-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .search {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 3rem;
+      padding: 2rem 0;
+
+      p {
+        font-weight: bold;
+        color: black;
+        font-size: 2rem;
+        text-decoration: underline;
+      }
+
+      i {
+        transform: scale(2);
+      }
+    }
+
+    .sort-by {
+      width: 90%;
+      padding: 2rem 0;
+
+      p {
+        
+        text-align: left;
+        text-transform: uppercase;
+        color: #7f7f7f;
+        padding: 0.7rem;
+        background-color: white;
+        border-style: solid;
+        border-width: thin;
+        border-color: black;
+      }
+    }
+  }
 }
 
 .grid-container {
   width: 90%;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
-  display: grid;
   text-align: center;
-  grid-template-rows: repeat(auto-fill, minmax(12rem, 15rem));
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 15rem));
-  grid-auto-columns: minmax(12rem, 15rem);
+  padding-bottom: 3rem;
+
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-auto-rows: minmax(12rem, 1fr);
   grid-auto-columns: minmax(12rem, 15rem);
   grid-gap: 1.3rem;
 }
 
 .grid-item {
-  img {
-    position: relative;
-  }
+  background-color: black;
+}
+
+@mixin grid-item-images {
+  background-image: url("/assets/Topics/music-video.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-size: 100%;
+  background-position: center;
 
   h3 {
-    color: white;
-    text-shadow: black;
-    // connfigure
-    position: relative;
-    top: -50%;
+    color: #f8f8f8;
     font-weight: 500;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 6rem;
+    margin-bottom: auto;
+    cursor: pointer;
   }
+}
+
+.grid-item-one {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/music-video.jpg");
+}
+
+.grid-item-two {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/art.jpg");
+}
+
+.grid-item-three {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/fashion.jpg");
+}
+
+.grid-item-four {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/profile.jpg");
+}
+
+.grid-item-five {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/documentary.jpg");
+}
+
+.grid-item-six {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/dance.jpg");
+}
+
+.grid-item-seven {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/photography.jpg");
+}
+
+.grid-item-eight {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/design.jpg");
+}
+
+.grid-item-nine {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/visual-narrative.jpg");
+}
+
+.grid-item-ten {
+  @include grid-item-images();
+  background-image: url("/assets/Topics/narrative-short.jpg");
 }

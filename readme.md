@@ -49,4 +49,4 @@ FOOTER
 SECOND PAGE
 
 - ~~topics page HTML~~
-- topics page SCSS
+- ~~topics page SCSS~~
