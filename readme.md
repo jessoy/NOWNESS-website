@@ -15,7 +15,7 @@ DROP DOWN MENU
 
 - ~~nested list reveal to be configured ('sites' in nav-bar)~~
 - ~~checkbox to be hidden~~
-- reveal drop down menu on animation / transistion
+- ~~reveal drop down menu on animation / transistion~~
 - ~~highlight functionality on nav-items~~
 - ~~change cursor type on hover(burger)~~
 - ~~add second scroll bar to nav list~~
@@ -23,18 +23,19 @@ DROP DOWN MENU
 MAIN BODY
 
 - ~~continue page configuration + end sections~~
-- check responsive sizing of elements
+- ~~check responsive sizing of elements~~
 - ~~insert images and media~~
 - ~~rolling slider of images~~
 - ~~Button border too thick~~
 - ~~social media rolling reveal colour on hover - sprite~~
-- social media - resolve wrap
+- ~~social media - resolve wrap~~
 - ~~video info on hover~~
 
 DESKTOP MEDIA QUERY
 
-- Configure social media section below 510px
-- Configure above 620px?
+- ~~Configure social media section below 510px~~
+- ~~Configure above 620px?~~
+- ~~Socail media in nav bar - adjust margins - line 304 scss~~
 
 MIXINS
 
