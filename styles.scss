@@ -209,7 +209,12 @@ a {
 
   .left-nav {
     width: 66%;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    .nav-menu {
+      background-color: red;
+      justify-self: flex-end;
+    }
   }
   h1 {
     font-size: 5rem;

@@ -158,9 +158,12 @@ a {
   }
   .left-nav {
     width: 66%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .left-nav .nav-menu {
+    background-color: red;
+    justify-self: flex-end;
   }
   h1 {
     font-size: 5rem;
