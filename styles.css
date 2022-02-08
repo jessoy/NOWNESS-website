@@ -54,8 +54,13 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: solid var(--grey-color-line) 0.5px;
   height: 3rem;
+}
+
+.nav-bar .logo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 h1 {
@@ -74,28 +79,16 @@ a {
   cursor: pointer;
 }
 
-.left-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.nav-menu {
   margin-left: 1rem;
 }
 
-.left-nav .nav-menu .burger-icon {
+.nav-menu .burger-icon {
   margin: 0.5rem 0;
   display: block;
 }
 
-.left-nav .nav-menu .burger-icon .burgerBar {
+.nav-menu .burger-icon .burgerBar {
   width: 1.4rem;
   height: 0.15rem;
   margin: 0.35rem;
@@ -155,15 +148,13 @@ a {
     height: 6rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    max-width: 95rem;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .left-nav {
-    width: 66%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .left-nav .nav-menu {
-    background-color: red;
-    justify-self: flex-end;
+  .nav-bar .logo {
+    margin-left: 4.5rem;
+    text-align: center;
   }
   h1 {
     font-size: 5rem;
@@ -187,6 +178,7 @@ a {
   min-width: 100%;
   letter-spacing: 0.05rem;
   border-bottom: solid var(--grey-color-line) 0.5px;
+  border-top: solid var(--grey-color-line) 0.5px;
   height: 4rem;
   overflow: auto;
 }
@@ -483,8 +475,9 @@ main .feature .video-container {
   background-image: url("https://img.nowness.com/nowness-frontend/ifUO20DRbSUWUMTWEYZf_G6Zfl5Lc.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: cover;
   background-color: #000;
+  background-size: cover;
+  background-position: center;
 }
 
 main .upcoming {
@@ -895,7 +888,7 @@ main .more-section h5 {
     font-size: 1.4rem;
   }
   main h5 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   main h6 {
     font-size: 1.4rem;
@@ -1041,7 +1034,7 @@ main .more-section h5 {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .more-section .more-section {
+  .join {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1058,6 +1051,41 @@ main .more-section h5 {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .join .join-container,
+  .join .social-media-section {
+    width: 50%;
+  }
+  .join .vl {
+    display: inherit;
+    border-left: solid black 0.05rem;
+    height: 18rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main .more-section .more-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main .more-section .text-container {
+    margin-top: 0;
   }
 }
 
